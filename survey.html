@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/mari.png" type="image/x-icon">
+    <title>Meraki (bazar y deco)</title>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div id="logo2">
+            <img src="img/logo.png" alt="" width="200" height="90">
+        </div>
+    </header>
+
+    <!-- Navegacion -->
+    <nav>
+        <ul>
+            <li><a href="index.html">VOLVER</a></li>
+        </ul>
+    </nav>
+    <!-- SECTION ENCUESTA -->
+    <section id="survey">
+        <div class="container-survey">
+            <div id="title">
+                <h2>¡Formulario de encuesta!</h2>
+            </div>
+            <form method="get" id="survey-form" action="index.html">
+                <div class="form-group">
+                    <label for="p1">Cómo se entero de nuestra existencia?</label>
+                    <label for="friends"><input id="friends" name="friends" type="checkbox"value="valor1" />Amigos</label>
+                    <label for="redes"><input id="redes" name="redes" type="checkbox" value="valor2" />Redes sociales</label>
+                    <label for="family"><input id="family" name="family" type="checkbox" value="valor3" />Familia</label>
+                    <label for="otro"><input id="otro" name="otro" type="checkbox" value="valor4" />Otro</label>
+                </div>
+                <div class="form-group">
+                    <p>Ha encontrado lo que buscaba?</p>
+                    <label><input name="si" value="Si" type="radio" checked />Si</label>
+                    <label><input name="si" value="no" type="radio" />No</label>
+                </div>
+                <div class="form-group">
+                    <p>Qué productos le ha sido de utilidad?</p>
+                    <select id="productos" name="productos">
+                        <optgroup label="Categorias">
+                            <option value="" selected="selected">- selecciona -</option>
+                            <option value="bazar">Bazar</option>
+                            <option value="tazas">Tazas</option>
+                            <option value="deco">Deco</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Recomendaría nuestros servicios?</p>
+                    <label><input name="user-recommend" value="Si" type="radio" checked />Si</label>
+                    <label><input name="user-recommend" value="no" type="radio" />No</label>
+                </div>
+                <div class="form-group">
+                    <p>Algun comentario o sugerancia?</p>
+                    <textarea name="commment" id="comment" cols="35" rows="5" placeholder="Ingresa un comentario..."></textarea>
+                </div>
+                <div class="form-group form-group-submit">
+                    <button type="submit" id="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Pie de página -->
+
+</body>
+
+</html>
